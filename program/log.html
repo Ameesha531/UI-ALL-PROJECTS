@@ -1,0 +1,54 @@
+<html> 
+    <head>
+        <style>
+            body{ 
+                background-color: rgb(250, 217, 215); 
+        } 
+        @media screen and (min-width:550px)
+        { body { background-color: rgb(9, 124, 181); } }
+    body{
+        background-color:rgb(237, 204, 17);
+        background-image:url("https://th.bing.com/th?id=OIP.IvRT4qmoieUgkM-IL2gsfwHaEL&w=332&h=187&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2");
+        color:aliceblue;
+        background-size:cover;
+        }
+        </style>  
+        <script>
+             function Validation(){
+                 var uname=document.myform.username.value;
+                  var pswrd=document.myform.password.value; 
+                  if(uname==null||uname=="") 
+                  { 
+                    alert("Name can't be blank")
+                     return false; 
+                     }
+                     else if(pswrd.length<6)
+                     { 
+                        alert("password must be 6 characters")
+                         return false; 
+                         } return true; 
+                         }
+                          </script>
+                           </head> 
+                           <body>
+                            <button><a href="C:\Users\amees\Desktop\program\wed.html">home</a></button>
+                            <form name ="myform" action="C:\Users\amees\Desktop\program\reg.html"
+                            onsubmit="return Validation(this)"> 
+                            <br> 
+                            <h1 align="center"> LOGIN PAGE </h1>
+                            <table align="center" cellspacing="10">
+                            <form action="reg.html"
+                            onsubmit="return Validation(this)">
+                            <center>
+                            username:<input type="text" name="username">
+                            <br> 
+                            <br>
+                        password:<input type="password"name="password">
+                    <br> 
+                <br> 
+             <input type="submit" value="submit">    
+             <input type="reset" value="reset">
+         </form> 
+         </center>
+    </body>
+ </html>
